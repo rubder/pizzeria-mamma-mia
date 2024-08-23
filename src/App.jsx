@@ -1,29 +1,32 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
 import Footer from './components/Footer';
-import RegisterPage from './components/RegisterPage';
-import LoginPage from './components/LoginPage';
+import Cart from './components/Cart';
+// import Home from './components/Home';
+// import RegisterPage from './components/RegisterPage';
+// import LoginPage from './components/LoginPage';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home'); // Estado para controlar la página actual
+  const [currentPage, setCurrentPage] = useState('cart'); 
 
   const renderPage = () => {
     switch (currentPage) {
-      case 'home':
-        return <Home />;
+      case 'cart':
+        return <Cart />;
       case 'register':
         return <RegisterPage />;
       case 'login':
         return <LoginPage />;
-      default:
+      case 'home':
         return <Home />;
+      default:
+        return <div>Page not found</div>;
     }
   };
 
   return (
     <div>
-      <Navbar setCurrentPage={setCurrentPage} /> {/* Pasamos setCurrentPage como prop */}
+      <Navbar setCurrentPage={setCurrentPage} /> {}
       {renderPage()}
       <Footer />
     </div>
