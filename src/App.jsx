@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Header from './components/Header'; 
 import Cart from './components/Cart';
-// import Home from './components/Home';
+// import Home from './components/Home'; // Comentado para pruebas
 // import RegisterPage from './components/RegisterPage';
 // import LoginPage from './components/LoginPage';
 
@@ -26,7 +27,8 @@ function App() {
 
   return (
     <div>
-      <Navbar setCurrentPage={setCurrentPage} /> {}
+      <Navbar setCurrentPage={setCurrentPage} />
+      <Header /> {}
       {renderPage()}
       <Footer />
     </div>

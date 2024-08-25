@@ -109,37 +109,36 @@ color: #f8f9fa;
   
   /* Estilos para el Header */
   .header {
-    position: relative;
-    text-align: center;
-    color: white; 
-    margin-bottom: 40px;
-  }
-  
-  .header-image {
-    width: 100%;
-    height: auto;
-    display: block; 
-  }
-  
-  .header-content {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    color: white; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  }
-  
-  .header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  .header p {
-    font-size: 1.2em;
-    margin: 0; 
-  }
-  
+  position: relative;
+  text-align: center;
+  color: white; 
+  margin-bottom: 40px;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+.header-content {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2em;
+  margin: 0; 
+}
     /* Estilos para las tarjetas de pizza */
   .home {
     display: grid;
